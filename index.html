@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day_2 Practice</title>
+    <style>
+        /* body{
+            background-image: url('https://images.unsplash.com/photo-1682685797332-e678a04f8a64?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            height: 100vh;
+        } */
+    </style>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Roboto:ital,wght@0,100;0,400;0,700;1,300;1,500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- HTML Table -->
+    <table border="1" style="text-align: center;">
+        <caption>
+            Employee Information
+        </caption>
+        <thead>
+            <tr>
+                <th>Employee Id</th>
+                <th>Name</th>
+                <th>Postion</th>
+                <th>Salary</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>001</td>
+                <td>Ram Sharma</td>
+                <td>Manager</td>
+                <td>$25000</td>
+            </tr>
+            <tr>
+                <td>001</td>
+                <td>Ram Sharma</td>
+                <td>Manager</td>
+                <td>$25000</td>
+            </tr>
+            <tr>
+                <td>001</td>
+                <td>Ram Sharma</td>
+                <td>Manager</td>
+                <td>$25000</td>
+            </tr>
+            <tr>
+                <td>001</td>
+                <td>Ram Sharma</td>
+                <td>Manager</td>
+                <td>$25000</td>
+            </tr>
+            <tr>
+                <td>001</td>
+                <td>Ram Sharma</td>
+                <td>Manager</td>
+                <td>$25000</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3">Total Salary</td>
+                <td>$300000</td>
+            </tr>
+        </tfoot>
+    </table>
+
+
+    <!-- List Types -->
+    <p>Order List Example</p>
+    <ol type="A">
+        <li>Ram</li>
+        <li>Ram</li>
+        <li>Ram</li>
+        <li>Ram</li>
+    </ol>
+
+    <p>UnOrder List Example</p>
+    <ul type="bullet">
+        <li>Shyam</li>
+        <li>Shyam</li>
+        <li>Shyam</li>
+        <li>Shyam</li>
+    </ul>
+
+    <!-- HTML Form -->
+    <form action="" method="post">
+<!-- Label grouping with fieldset and legend -->
+        <fieldset>
+            <legend><b>Personal Information:</b></legend>
+            <label for="email">Email Address</label>
+            <input type="email" name="email" placeholder="Enter a email address" value="san.adh1996@gmail.com" readonly/>
+            <br/>             
+
+        <label for="username">Password</label>
+        <input type="password"  name="password" placeholder="Enter a password" autofocus required/>
+        <br/>
+
+        <label>Gender</label>
+        <input type="radio" name="gender" value="male" required/>
+        <label for="male">Male</label>
+        <input type="radio" name="gender" value="female" required/>
+        <label for="female">Female</label>
+        <input type="radio" name="gender" value="others" required/>
+        <label for="others">Others</label>
+        <br/>
+
+        <label for="date">BirthDate</label>
+        <input type="date" name="date"  required/>
+        <br/>
+
+        <label for="range">Range</label>
+        <input type="range" name="range" min="0" max="100" required/>
+        <br/>
+
+        <label for="color">ColorPicker</label>
+        <input type="color" name="color"  required/>
+        <br/>
+
+    </fieldset>
+
+
+        <label for="terms">Remember Me</label>
+        <textarea name="descprition" cols="30" required></textarea>
+        <br/>
+
+        <label for="file">Upload File</label>
+        <input type="file" name="file" id="file"/>
+        <br/>
+
+        <input type="checkbox" name="terms" required/>
+        <label for="terms">I accept terms and conditions</label>
+        <br/>
+
+        <input type="checkbox" name="remember me" required/>
+        <label for="terms">Remember Me</label>
+        <br/>
+
+        <select name="dropdown" id="">
+            <option value="">Select a value to continue</option>
+            <option value="A">A</option>
+            <option value="B">B</option>
+        </select>
+
+        <Button>Submit</Button>
+    </form>
+
+    <!-- Assignment Day 2 -->
+    <section class="container">
+        <div class="formContainer">
+            <h1>Survey Form:</h1>
+            <hr>
+            <h2>Customer Name</h2>
+            <div class="nameContainer">
+                <div class="firstName">
+                    <input type="text"/>
+                    <span>Enter first name here.</span>
+                </div>
+                <div class="lastName">
+                    <input type="text"/>
+                    <span>Enter last name here.</span>
+                </div>
+            </div>
+
+            <h2>Address</h2>
+            <div class="addressContainer">
+                <div class="address">
+                    <input type="text"/>
+                    <span>Street Address</span>
+                </div>
+                <div class="address">
+                    <input type="text"/>
+                    <span>Street Address</span>
+                </div>
+                <div class="smallContainer">
+                    <div class="city">
+                        <input type="text"/>
+                        <span>City</span>
+                    </div>
+                    <div class="state">
+                        <input type="text"/>
+                        <span>State</span>
+                    </div>
+                </div>
+                    <div class="zip">
+                        <input type="text"/>
+                        <span>Zip</span>
+                    </div>
+                <div class="country">
+                    <select name="country" id="">
+                        <option value="Select Country">Selcet Country</option>
+                        <option value="Nepal">Nepal</option>
+                        <option value="China">China</option>
+                        <option value="India">India</option>
+                    </select>
+                    <span>Select Country</span>
+                </div>
+            </div>
+
+            <h2>Contact</h2>
+            <div class="contactContainer">
+                <div class="phone">
+                    <input type="number"/>
+                    <span>Phone</span>
+                </div>
+                <div class="email">
+                    <input type="email"/>
+                    <span>Email</span>
+                </div>
+            </div>
+
+            <h2>Personal Details</h2>
+            <div class="personalDetails">
+                <div class="male">
+                    <input type="radio" name="gender"/>
+                    <label for="male">Male</label>
+                </div>
+                <div class="female">
+                    <input type="radio" name="gender"/>
+                    <label for="male">Female</label>
+                </div>
+                <div class="others">
+                    <input type="radio" name="gender"/>
+                    <label for="others">Others</label>
+                </div>
+            </div>
+
+            <h2>Ratings</h2>
+            <div class="ratings">
+                <div class="rating1">
+                    <p>Rating1:</p>
+                    <input type="radio" name="rating1"/>
+                    <label>Bad</label>
+                    <input type="radio" name="rating1"/>
+                    <label>Good</label>
+                    <input type="radio" name="rating1"/>
+                    <label>Excellent</label>
+                </div>
+                <div class="rating2">
+                    <p>Rating2:</p>
+                    <input type="radio" name="rating2"/>
+                    <label>Bad</label>
+                    <input type="radio" name="rating2"/>
+                    <label>Good</label>
+                    <input type="radio" name="rating2"/>
+                    <label>Excellent</label>
+                </div>
+                <div class="rating3">
+                    <p>Rating3:</p>
+                    <input type="radio" name="rating3"/>
+                    <label>Bad</label>
+                    <input type="radio" name="rating3"/>
+                    <label>Good</label>
+                    <input type="radio" name="rating3"/>
+                    <label>Excellent</label>
+                </div>
+                <div class="rating4">
+                    <p>Rating4:</p>
+                    <input type="radio" name="rating4"/>
+                    <label>Bad</label>
+                    <input type="radio" name="rating4"/>
+                    <label>Good</label>
+                    <input type="radio" name="rating4"/>
+                    <label>Excellent</label>
+                </div>
+                <div class="rating5">
+                    <p>Rating5:</p>
+                    <input type="radio" name="rating5"/>
+                    <label>Bad</label>
+                    <input type="radio" name="rating5"/>
+                    <label>Good</label>
+                    <input type="radio" name="rating5"/>
+                    <label>Excellent</label>
+                </div>
+                <div class="rating6">
+                    <p>Rating6:</p>
+                    <input type="radio" name="rating6"/>
+                    <label>Bad</label>
+                    <input type="radio" name="rating6"/>
+                    <label>Good</label>
+                    <input type="radio" name="rating6"/>
+                    <label>Excellent</label>
+                </div>
+                <div class="rating7">
+                    <p>Rating7:</p>
+                    <input type="radio" name="rating7"/>
+                    <label>Bad</label>
+                    <input type="radio" name="rating7"/>
+                    <label>Good</label>
+                    <input type="radio" name="rating7"/>
+                    <label>Excellent</label>
+                </div>
+            </div>
+            <div class="submit">
+                <input type="submit" value="Submit"/>
+            </div>
+        </div>
+    </section>
+    
+</body>
+</html>

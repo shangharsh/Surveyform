@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: poppins;
+}
+
+.container,.submit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formContainer{
+    width: 40%;
+    height: 100%;
+    box-shadow: 0 0 7px black;
+    border-radius: 7px;
+    padding: 10px;
+    margin: 20px 0;
+}
+
+h1{
+    text-align: center;
+    padding: 10px 0;
+}
+
+h2{
+    margin-top: 20px;
+}
+
+input, select{
+    height: 30px;
+    border-radius: 7px;
+}
+
+.nameContainer,.smallContainer,.contactContainer{
+    display: flex;
+    justify-content: space-between;
+}
+
+.firstName,.lastName{
+    width: 40%;
+}
+
+.address,.city,.state,.zip,.firstName,.lastName,.country,.phone,.email,.personalDetails,.ratings{
+    display: flex;
+    flex-direction: column;
+}
+
+.city,.state,.zip, select, .phone, .email{
+    width: 40%;
+}
+
+.male,.female,.others,.rating1,.rating2,.rating3,.rating4,.rating5,.rating6,.rating7{
+    display: flex;
+    align-items: center;
+}
+
+label{
+    padding:0 5px;
+}
+
+p{
+    padding-right: 10px;
+}
+
+.submit input{
+    padding: 0 20px;
+    background-color: skyblue;
+    border: none;
+    color: white;
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+span{
+    font-size: 14px;
+    margin-bottom: 16px;
+}
+
+
